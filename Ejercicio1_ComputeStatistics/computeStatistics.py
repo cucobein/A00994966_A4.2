@@ -101,9 +101,9 @@ def calculate_standard_deviation(variance):
 
 def write_results_to_file(results, execution_time):
     """
-    Writes the computed statistics to a file named 'statistics_results.txt'.
+    Writes the computed statistics to a file named 'StatisticsResults.txt'.
     """
-    with open("statistics_results.txt", "w", encoding="utf-8") as file:
+    with open("StatisticsResults.txt", "w", encoding="utf-8") as file:
         file.write("Statistics Results:\n")
         file.write(f"Mean: {results['mean']:.2f}\n")
         file.write(f"Median: {results['median']:.2f}\n")
@@ -150,7 +150,7 @@ def main():
     standard_deviation = calculate_standard_deviation(variance)
     print(f"Standard Deviation: {standard_deviation:.2f}")
 
-    execution_time = time.time() - start_time  # Calc execution time
+    execution_time = time.time() - start_time
 
     #Store results in file
     results = {
